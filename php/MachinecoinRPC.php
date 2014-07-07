@@ -94,22 +94,44 @@ class Machinecoin {
 
 
       /**
-       * Get the proof-of-work difficulty 
+       * Get the details of a block
        *
-       * @return string Machinecoin difficulty
+       * @param string $hash block hash
+       * @return array describing the block
        */
-       function getdifficulty() {
-         return $this->client->getdifficulty();
+       function getblock( $hash ) {
+         return $this->client->getblock( $hash );
        }
 
 
       /**
        * Get the the number of blocks in the longest block chain 
        *
-       * @return string Machinecoin blocknumber
+       * @return int Machinecoin blocknumber
        */
        function getblockcount() {
          return $this->client->getblockcount();
+       }
+
+
+      /**
+       * Get the hash of a block for given index 
+       *
+       * @param int $index block index
+       * @return string block hash
+       */
+        function getblockhash( $index ) {
+          return $this->client->getblockhash( $index );
+        }
+
+
+      /**
+       * Get the proof-of-work difficulty 
+       *
+       * @return float Machinecoin difficulty
+       */
+       function getdifficulty() {
+         return $this->client->getdifficulty();
        }
 
 
