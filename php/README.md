@@ -1,6 +1,6 @@
 # Machinecoin-Api PHP
 
-A basic PHP library to talk to a machinecoind daemon to get you started in your machine project to take us to the moon.
+A basic PHP library to talk to a machinecoind daemon to get you started in your machine project.
 
 I haven't implemented all of the end points of the API, focused on account and moving of coins. I'm trying to make sure the library is documented and includes examples so its easy to use before being complete.  Patches welcome.
 
