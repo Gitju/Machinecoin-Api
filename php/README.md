@@ -31,14 +31,14 @@ $config = array(
 $machinecoinrpc = new machinecoin( $config );
 
 // create a new address
-$address = $machinecoinrpc->get_address( 'gitju' );
+$address = $machinecoinrpc->getaddress( 'gitju' );
 print( $address );
 
 // check balance 
-print( "gitju: " . $machinecoinrpc->get_balance( 'gitju' ) );
+print( "gitju: " . $machinecoinrpc->getbalance( 'gitju' ) );
 
 // send money externally (withdrawl?)
-$machinecoinrpc->send( 'gitju', 'MCsEypMLMtBkAuqzevYxeFxiSUx5eWAU3y', 100 );
+$machinecoinrpc->sendfrom( 'gitju', 'MCsEypMLMtBkAuqzevYxeFxiSUx5eWAU3y', 100 );
 
 ```
 
