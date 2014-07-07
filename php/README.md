@@ -22,8 +22,8 @@ Example use, see examples.php for more
 require "./MachinecoinRPC.php";
 
 $config = array(
-    'user' => 'machinecoinrpc',
-    'pass' => '--password--',
+    'user' => '<rpcusername>',
+    'pass' => '<rpcpassword>',
     'host' => '127.0.0.1',
     'port' => '40332' );
 

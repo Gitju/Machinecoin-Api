@@ -5,8 +5,8 @@
 require "./MachinecoinRPC.php";
 
 $config = array(
-    'user' => 'machinecoincoinrpc',
-    'pass' => '--password--',
+    'user' => '<rpcusername>',
+    'pass' => '<rpcpassword>',
     'host' => '127.0.0.1',
     'port' => '40332' );
 
@@ -15,14 +15,14 @@ $machinecoin = new machinecoin( $config );
 
 
 // create a new address
-$address = $machinecoin->get_address( 'gitju' );
+$address = $machinecoin->getaddress( 'gitju' );
 print( "Address: $address \n" );
 
 // list accounts in wallet
-print_r( $machinecoin->list_accounts() );
+print_r( $machinecoin->listaccounts() );
 
 // get balance in wallet
-print( "gitju: " . $machinecoin->get_balance( 'gitju' ) );
+print( "gitju: " . $machinecoin->getbalance( 'gitju' ) );
 
 // move money from accounts in wallet
 // moves from 'nico' to account 'gitju'
@@ -30,5 +30,5 @@ $machinecoin->move( 'nico', 'gitju', 10000 );
 
 // send money externally (withdrawl?)
 // send from account to external address
-$machinecoin->send( 'gitju', 'MCsEypMLMtBkAuqzevYxeFxiSUx5eWAU3y', 100 );
+$machinecoin->sendfrom( 'gitju', 'MCsEypMLMtBkAuqzevYxeFxiSUx5eWAU3y', 100 );
 
