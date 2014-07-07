@@ -46,7 +46,9 @@ $machinecoinrpc->send( 'gitju', 'MCsEypMLMtBkAuqzevYxeFxiSUx5eWAU3y', 100 );
 ## About
 
 Library created by
+
   Marcus Kazmierczak, http://mkaz.com/
+  
   Juergen Scholz, http://machinecoin.org
 
 

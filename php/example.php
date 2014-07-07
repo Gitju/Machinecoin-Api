@@ -30,5 +30,5 @@ $machinecoin->move( 'nico', 'gitju', 10000 );
 
 // send money externally (withdrawl?)
 // send from account to external address
-$machinecoin->send( 'gitju', 'DNYJ2ANdx1GL4sbCyikaVgYrf2GfiCtf8N', 100 );
+$machinecoin->send( 'gitju', 'MCsEypMLMtBkAuqzevYxeFxiSUx5eWAU3y', 100 );
 
