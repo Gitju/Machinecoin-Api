@@ -99,7 +99,7 @@ class Machinecoin {
      *
      * @return array strings of account => balance
      */
-     function list_account() {
+     function list_accounts() {
        return $this->client->listaccounts();
      }
 
