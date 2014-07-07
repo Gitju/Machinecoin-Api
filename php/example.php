@@ -8,7 +8,7 @@ $config = array(
     'user' => 'machinecoincoinrpc',
     'pass' => '--password--',
     'host' => '127.0.0.1',
-    'port' => '22555' );
+    'port' => '40332' );
 
 // create client conncetion
 $machinecoin = new machinecoin( $config );
