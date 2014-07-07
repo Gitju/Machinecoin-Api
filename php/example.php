@@ -10,9 +10,8 @@ $config = array(
     'host' => '127.0.0.1',
     'port' => '40332' );
 
-// create client conncetion
+// create client connection
 $machinecoin = new machinecoin( $config );
-
 
 // create a new address
 $address = $machinecoin->getaddress( 'gitju' );
@@ -28,7 +27,8 @@ print( "gitju: " . $machinecoin->getbalance( 'gitju' ) );
 // moves from 'nico' to account 'gitju'
 $machinecoin->move( 'nico', 'gitju', 10000 );
 
-// send money externally (withdrawl?)
+// send money externally (withdrawal?)
 // send from account to external address
 $machinecoin->sendfrom( 'gitju', 'MCsEypMLMtBkAuqzevYxeFxiSUx5eWAU3y', 100 );
 
+?>
