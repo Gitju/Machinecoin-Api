@@ -36,7 +36,8 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 require_once dirname(  __FILE__ ) . '/jsonRPCClient.php';
 
-class MacRPC {
+class MacRPC 
+{
 
       private $client;
 
@@ -45,13 +46,14 @@ class MacRPC {
        * @param $config array of parameters $host, $port, $user, $pass
        */
 
-      function __construct( $config ) {
+      function __construct( $config ) 
+      {
 
         $connect_string = sprintf ( 'http://%s:%s@%s:%s/',
-        $config['user'],
-        $config['pass'],
-        $config['host'],
-        $config['port']);
+        $config['rpc_user'],
+        $config['rpc_pass'],
+        $config['rpc_host'],
+        $config['rpc_port']);
 
         // internal client to use for connection
         $this->client = new jsonRPCClient( $connect_string );
