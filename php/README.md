@@ -1,4 +1,4 @@
-# Machinecoin-Api PHP
+# Machinecoin-RPC PHP
 
 A basic PHP library to talk to a machinecoind daemon to get you started in your machine project.
 

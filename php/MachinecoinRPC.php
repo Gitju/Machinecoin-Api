@@ -5,30 +5,30 @@
 Copyright 2014 Marcus Kazmierczak
 Copyright 2014 Juergen Scholz <j.scholz@machinecoin.org>
 
-This file is part of Machinecoin-Api PHP.
+This file is part of Machinecoin-RPC PHP.
 
-Machinecoin-Api PHP is free software; you can redistribute it and/or modify
+Machinecoin-RPC PHP is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation; either version 3 of the License, or
 (at your option) any later version.
 
-Machinecoin-Api PHP is distributed in the hope that it will be useful,
+Machinecoin-RPC PHP is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with Machinecoin-Api PHP; if not, write to the Free Software
+along with Machinecoin-RPC PHP; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
 /**
- * Project : Machinecoin-Api PHP
+ * Project : Machinecoin-RPC PHP
  * Summary : A basic php library to talk with Machinecoind 
  *         : that bases on php-doge https://github.com/mkaz/php-doge
  *         : from Marcus Kazmierczak
  *
- * Source  : https://github.com/Gitju/Machinecoin-Api
+ * Source  : https://github.com/Gitju/Machinecoin-RPC
  *
  * Author  : Juergen Scholz, Marcus Kazmierczak (@mkaz)
  * License : GPL v3
