@@ -2,26 +2,28 @@
 
 ## Simple command-line script to show examples
 
-require "./MachinecoinRPC.php";
+require './MachinecoinRPC.php';
 
-$config = array(
+$config = array
+(
     'user' => '<rpcusername>',
     'pass' => '<rpcpassword>',
     'host' => '127.0.0.1',
-    'port' => '40332' );
+    'port' => '40332'
+);
 
 // create client connection
 $machinecoin = new machinecoin( $config );
 
 // create a new address
 $address = $machinecoin->getaddress( 'gitju' );
-print( "Address: $address \n" );
+print( 'Address: ' . $address . ' ');
 
 // list accounts in wallet
 print_r( $machinecoin->listaccounts() );
 
 // get balance in wallet
-print( "gitju: " . $machinecoin->getbalance( 'gitju' ) );
+print( 'gitju: ' . $machinecoin->getbalance( 'gitju' ) );
 
 // move money from accounts in wallet
 // moves from 'nico' to account 'gitju'
