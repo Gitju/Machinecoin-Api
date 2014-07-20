@@ -34,12 +34,12 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  * License : GPL v3
  */ 
 
-require_once dirname(  __FILE__ ) . '/jsonRPCClient.php';
+require_once dirname(  __FILE__ ) . '/lib/EasyMachinecoin-PHP/easymachinecoin.php';
 
 class MacRPC 
 {
 
-      private $client;
+      private $machinecoin;
 
       /** 
        * Create client to connect on init
@@ -49,14 +49,14 @@ class MacRPC
       function __construct( $config ) 
       {
 
-        $connect_string = sprintf ( 'http://%s:%s@%s:%s/',
-        $config['rpc_user'],
-        $config['rpc_pass'],
-        $config['rpc_host'],
-        $config['rpc_port']);
-
         // internal client to use for connection
-        $this->client = new jsonRPCClient( $connect_string );
+        $this->machinecoin = new Machinecoin
+        (
+        	$config['rpc_user'],
+        	$config['rpc_pass'],
+        	$config['rpc_host'],
+        	$config['rpc_port']
+        );
       }
 
 
@@ -67,7 +67,7 @@ class MacRPC
        * @return string account name key
        */ 
        function getaccount( $address ) {
-         return $this->client->getaccount( $address );
+         return $this->machinecoin->getaccount( $address );
        }
 
 
@@ -80,7 +80,7 @@ class MacRPC
        * @return string machinecoin address 
        */
        function getaccountaddress( $account ) {
-         return $this->client->getaccountaddress( $account );
+         return $this->machinecoin->getaccountaddress( $account );
        }
 
 
@@ -91,7 +91,7 @@ class MacRPC
        * @return float account balance
        */
        function getbalance( $account, $minconf=1 ) {
-         return $this->client->getbalance( $account, $minconf );
+         return $this->machinecoin->getbalance( $account, $minconf );
        }
 
 
@@ -102,7 +102,7 @@ class MacRPC
        * @return array describing the block
        */
        function getblock( $hash ) {
-         return $this->client->getblock( $hash );
+         return $this->machinecoin->getblock( $hash );
        }
 
 
@@ -112,7 +112,7 @@ class MacRPC
        * @return int Machinecoin blocknumber
        */
        function getblockcount() {
-         return $this->client->getblockcount();
+         return $this->machinecoin->getblockcount();
        }
 
 
@@ -123,7 +123,7 @@ class MacRPC
        * @return string block hash
        */
         function getblockhash( $index ) {
-          return $this->client->getblockhash( $index );
+          return $this->machinecoin->getblockhash( $index );
         }
 
 
@@ -133,7 +133,7 @@ class MacRPC
        * @return float Machinecoin difficulty
        */
        function getdifficulty() {
-         return $this->client->getdifficulty();
+         return $this->machinecoin->getdifficulty();
        }
 
 
@@ -145,7 +145,7 @@ class MacRPC
        * @return string Machinecoin address
        */
        function getnewaddress( $account='' ) {
-         return $this->client->getnewaddress( $account );
+         return $this->machinecoin->getnewaddress( $account );
        }
 
 
@@ -156,7 +156,7 @@ class MacRPC
        * @return array describing the transaction
        */
        function gettransaction( $txid ) {
-         return $this->client->gettransaction( $txid );
+         return $this->machinecoin->gettransaction( $txid );
        }
 
 
@@ -166,7 +166,7 @@ class MacRPC
        * @return array strings of account => balance
        */
        function listaccounts() {
-         return $this->client->listaccounts();
+         return $this->machinecoin->listaccounts();
        }
 
 
@@ -180,7 +180,7 @@ class MacRPC
        * @return
        */
        function move( $account_from, $account_to, $amount ) {
-         return $this->client->move( $account_from, $account_to, $amount );
+         return $this->machinecoin->move( $account_from, $account_to, $amount );
        }
 
 
@@ -193,7 +193,7 @@ class MacRPC
        * @return string txid
        */
        function sendfrom( $account, $to_address, $amount ) {
-         $txid = $this->client->sendfrom( $account, $to_address, $amount );  
+         $txid = $this->machinecoin->sendfrom( $account, $to_address, $amount );  
          return $txid;
        }
 
@@ -205,7 +205,7 @@ class MacRPC
        * @param string $account account string
        */
        function setaccount( $address, $account ) {
-         return $this->client->setaccount($address, $account);
+         return $this->machinecoin->setaccount($address, $account);
        }
 
 
@@ -215,7 +215,7 @@ class MacRPC
        * @return array with the properties of the address
        */
        function validateaddress( $address ) {
-         return $this->client->validateaddress($address);
+         return $this->machinecoin->validateaddress($address);
        }   
 }
 
