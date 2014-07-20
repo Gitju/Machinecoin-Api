@@ -2,7 +2,7 @@
 
 ## Simple command-line script to show examples
 
-require './MachinecoinRPC.php';
+require './MacRPC.php';
 
 $config = array
 (
