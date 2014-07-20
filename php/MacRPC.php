@@ -34,7 +34,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  * License : GPL v3
  */ 
 
-require_once dirname(  __FILE__ ) . '/lib/EasyMachinecoin-PHP/easymachinecoin.php';
+require_once dirname(  __FILE__ ) . '/lib/EasyMachinecoin-PHP/MacRPC.php';
 
 class MacRPC 
 {
