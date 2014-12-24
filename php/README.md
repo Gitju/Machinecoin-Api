@@ -19,7 +19,7 @@ Also, here's a [guide building machinecoind](https://github.com/Gitju/Machinecoi
 Example use, see examples.php for more
 
 ```
-require "./MacRPC.php";
+require "./Machinecoind.php";
 
 $config = array(
     'user' => '<rpcusername>',
@@ -28,17 +28,17 @@ $config = array(
     'port' => '40332' );
 
 // create client conncetion
-$MacRPC = new MacRPC( $config );
+$Machinecoind = new Machinecoind( $config );
 
 // create a new address
-$address = $MacRPC->getaddress( 'gitju' );
+$address = $Machinecoind->getaddress( 'gitju' );
 print( $address );
 
 // check balance 
-print( "gitju: " . $MacRPC->getbalance( 'gitju' ) );
+print( "gitju: " . $Machinecoind->getbalance( 'gitju' ) );
 
 // send money externally (withdrawl?)
-$MacRPC->sendfrom( 'gitju', 'MCsEypMLMtBkAuqzevYxeFxiSUx5eWAU3y', 100 );
+$Machinecoind->sendfrom( 'gitju', 'MCsEypMLMtBkAuqzevYxeFxiSUx5eWAU3y', 100 );
 
 ```
 
