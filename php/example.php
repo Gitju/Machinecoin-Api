@@ -6,10 +6,10 @@ require './Machinecoind.php';
 
 $config = array
 (
-    'user' => '<rpcusername>',
-    'pass' => '<rpcpassword>',
-    'host' => '127.0.0.1',
-    'port' => '40332'
+    'rpc_user' => '<rpcusername>',
+    'rpc_pass' => '<rpcpassword>',
+    'rpc_host' => '127.0.0.1',
+    'rpc_port' => '40332'
 );
 
 // create client connection
