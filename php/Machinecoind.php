@@ -36,7 +36,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 require_once dirname(  __FILE__ ) . '/lib/EasyMachinecoin-PHP/MacRPC.php';
 
-class MacRPC 
+class Machinecoind 
 {
 
       private $MacRPC;
@@ -50,7 +50,7 @@ class MacRPC
       {
 
         // internal client to use for connection
-        $this->MacRPC = new Machinecoin
+        $this->MacRPC = new MacRPC
         (
         	$config['rpc_user'],
         	$config['rpc_pass'],

@@ -2,7 +2,7 @@
 
 ## Simple command-line script to show examples
 
-require './MacRPC.php';
+require './Machinecoind.php';
 
 $config = array
 (
@@ -13,24 +13,24 @@ $config = array
 );
 
 // create client connection
-$MacRPC = new MacRPC( $config );
+$Machinecoind = new Machinecoind( $config );
 
 // create a new address
-$address = $MacRPC->getaddress( 'gitju' );
+$address = $Machinecoind->getaddress( 'gitju' );
 print( 'Address: ' . $address . ' ');
 
 // list accounts in wallet
-print_r( $MacRPC->listaccounts() );
+print_r( $Machinecoind->listaccounts() );
 
 // get balance in wallet
-print( 'gitju: ' . $MacRPC->getbalance( 'gitju' ) );
+print( 'gitju: ' . $Machinecoind->getbalance( 'gitju' ) );
 
 // move money from accounts in wallet
 // moves from 'nico' to account 'gitju'
-$MacRPC->move( 'nico', 'gitju', 10000 );
+$Machinecoind->move( 'nico', 'gitju', 10000 );
 
 // send money externally (withdrawal?)
 // send from account to external address
-$MacRPC->sendfrom( 'gitju', 'MCsEypMLMtBkAuqzevYxeFxiSUx5eWAU3y', 100 );
+$Machinecoind->sendfrom( 'gitju', 'MCsEypMLMtBkAuqzevYxeFxiSUx5eWAU3y', 100 );
 
 ?>
