@@ -9,9 +9,9 @@ We haven't implemented all of the end points of the API, focused on account and 
 
 Requires **machinecoind** to already be installed and running on your local server or reachable by your server.  
 
-Get machinecoind source from: https://github.com/Gitju/Machinecoin
+Get machinecoind source from: https://github.com/machinecoin-project/Machinecoin
 
-Also, here's a [guide building machinecoind](https://github.com/Gitju/Machinecoin-Docs/tree/master/guides/build) on debian-based system.  
+Also, here's a [guide building machinecoind](https://github.com/machinecoin-project/Machinecoin-Docs/tree/master/guides/build) on debian-based system.  
 
 
 ## Usage:

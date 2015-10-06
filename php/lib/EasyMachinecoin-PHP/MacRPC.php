@@ -3,7 +3,7 @@
 EasyMachinecoin-PHP
 
 A simple class for making calls to Machinecoin's API using PHP.
-https://github.com/Gitju/Machinecoin-RPC/tree/master/php/lib/EasyMachinecoin-PHP
+https://github.com/machinecoin-project/Machinecoin-RPC/tree/master/php/lib/EasyMachinecoin-PHP
 
 ====================
 

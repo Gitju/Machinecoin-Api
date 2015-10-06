@@ -28,7 +28,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  *         : that bases on php-doge https://github.com/mkaz/php-doge
  *         : from Marcus Kazmierczak
  *
- * Source  : https://github.com/Gitju/Machinecoin-RPC
+ * Source  : https://github.com/machinecoin-project/Machinecoin-RPC
  *
  * Author  : Juergen Scholz, Marcus Kazmierczak (@mkaz)
  * License : GPL v3
