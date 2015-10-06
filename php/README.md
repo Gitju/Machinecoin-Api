@@ -49,6 +49,6 @@ Library created by
 
   Marcus Kazmierczak, http://mkaz.com/
   
-  Juergen Scholz, http://machinecoin.org
+  Juergen Scholz, http://gitju.github.io/Machinecoin.org
 
 
